@@ -28,6 +28,18 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
+#Email config
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Or
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'k.sadok.info@gmail.com'
+EMAIL_HOST_PASSWORD = 'Fittopage1986'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 # Application definition
 
 INSTALLED_APPS = [
