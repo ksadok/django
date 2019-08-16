@@ -4,7 +4,7 @@ from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
 from django.views.generic import ListView
 from .forms import EmailPostForm
 from django.core.mail import send_mail
-
+from django.conf import settings
 
 
 def post_share(request,post_id):
